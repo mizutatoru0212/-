@@ -1,0 +1,139 @@
+<!DOCTYPE html>  
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Sawarabi+Mincho&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <image id="topimage" src="images/topimage.jpeg">
+      <h1>どこにいても最高の一杯を</h1>
+      <p>DRONE COFFEE</p>
+    </div>
+
+    <div class="contents">
+      <p><strong>What's DRONE COFFEE?</strong> </p>
+      <h2>ドローンコーヒーとは？</h2>
+      <p>ドローンコーヒーとは、ドローンによるコーヒー配送サービスです。準備はスマホアプリをいれるだけ！コーヒーが飲みたいときにスマートフォンでオーダーすると5分以内に淹れたてのコーヒーをお届けします。</p>
+    </div>
+
+   <div class="contents">
+      <p><strong>Menu</strong></p>
+      <h2>メニュー</h2>
+      <p>ドリップコーヒー　：　５００円</p>
+      <p>カフェラテ　：　７００円</p>
+      <p>カフェモカ　：　８００円</p>
+      <p>エスプレッソ　：　５００円</p>
+    </div>
+
+    <div class="contents">
+      <p><strong>voice</strong></p>
+      <h2>利用者の声</h2>
+      <blockquote>「忙しい朝でも、アプリで簡単に注文して5分以内にコーヒーが届くので、本当に助かっています。」</blockquote>
+      <blockquote>「オフィスで仕事中にふとコーヒーが飲みたくなった時、すぐに注文できて新鮮なコーヒーが届くので、リフレッシュできます。」</blockquote>
+    </div>
+
+    <div class="contents">
+      <p><strong>Member</strong></p>
+      <h2>創業メンバー</h2>
+        <p><strong>最高経営責任者CEO</strong></p>
+        <p class="name">水田徹</p>
+        <p class="script">徳島県出身。コーヒーをどこでもいつでも飲みたいとの思いから起業。</p>
+      </li>
+      <li>
+      <p><strong>最高技術責任者CTO</strong></p><p class="name">神山まる子</p>
+        <p class="script">東京都出身。プログラミングを中学生から始める。ドローンの設計を担当</p>
+      </li>
+      <li>
+       <p><strong>最高コーヒー責任者CCO</strong></p><p class="name">村山海優</p>
+        <p class="script">埼玉県出身。クリエイティブディレクター。主にマーケティングを担当している。多くの人にコーヒーを。</p>
+      </li>
+    </ul>
+  </div>
+
+  </body>
+</html>
+
+<style>
+body {
+    font-family: "Sawarabi Mincho", "Handlee", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .bg {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  .bg h1 {
+    position: absolute;
+    font-weight: normal; /* フォントの重みをノーマルに設定 */
+    font-size: 2rem; /* フォントサイズを2倍に設定 */
+    top: 350px;
+    left: 100px;
+    margin: 0; /* マージンをリセット */
+  }
+
+  .bg p {
+    position: absolute;
+    font-size: 3rem; /* フォントサイズを3倍に設定 */
+    top: 400px;
+    left: 100px;
+    margin: 0; /* マージンをリセット */
+  }
+
+  #topimage {
+    width: 95vw; /* 画像の幅をビュー幅の95%に設定 */
+    height: 105vh; /* 画像の高さをビュー高さの105%に設定 */
+    object-fit: cover; /* 画像がコンテナを覆うように調整 */
+    position: relative;
+    top: 10px; /* 画像を下に10px移動 */
+    left: 10px; /* 画像を右に10px移動 */
+  }
+
+  .contents {
+    text-align: center;
+    width: 40vw;
+    margin: 0 auto;
+    padding-bottom: 100px;
+  }
+
+  .memberList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0; /* パディングをリセット */
+    margin: 0; /* マージンをリセット */
+  }
+
+  .memberList li {
+    width: calc(100% / 3);
+    padding: 0 10px; /* パディングを調整 */
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 20px; /* リストアイテム間に余白を追加 */
+  }
+
+  .name {
+    font-size: 1.5rem; /* フォントサイズを調整 */
+    margin: 10px 0; /* 上下の余白を追加 */
+    font-weight: bold; /* フォントを太字に */
+  }
+
+  .script {
+    font-size: 1rem; /* フォントサイズを調整 */
+    padding: 0 20px; /* パディングを調整 */
+  }
+
+  .contents p, .bg p {
+    font-family: "Handlee", cursive;
+  }
+</style>
